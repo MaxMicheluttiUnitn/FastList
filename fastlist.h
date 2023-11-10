@@ -453,7 +453,7 @@ template <typename T> class FastList{
     */
     FastList<T>* getReversedPolonger(){
         auto res = new FastList(*this);
-        if(res==nullptr)
+        if(res == nullptr)
             throw MemoryException("get reversed polonger");
         res->reverse();
         return res;
